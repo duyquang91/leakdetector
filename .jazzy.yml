@@ -1,0 +1,8 @@
+author: Steve Dao
+author_url: https://twitter.com/duyquang_91
+github_url: https://github.com/duyquang91/LeakDetector
+root_url: https://duyquang91.github.io/LeakDetector/
+module: LeakDetector
+output: docs
+theme: fullwidth
+xcodebuild_arguments: [-workspace, 'LeakDetector.xcworkspace', -scheme, 'LeakDetector-iOS']

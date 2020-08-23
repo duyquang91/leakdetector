@@ -9,15 +9,9 @@
 
 Memory Leak Dedetection in runtime for iOS
 
-- [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-
-## Requirements
-
-- iOS 8.0+ / Mac OS X 10.10+ / tvOS 9.0+ / watchOS 2.0+
-- Xcode 10.0+
 
 ## Installation
 
@@ -145,13 +139,58 @@ $ git submodule update --init --recursive
 
 ## Usage
 
+Let's imagine we have a class which can be leaked:
+
+```swift
+class LeakableObject {
+  var otherObject: LeakableObject!
+
+  init(otherObject: LeakableObject? = nil) {
+    self.otherObject = otherObject
+  }
+}
+```
+
+Two LeakableObject instances bellow will be leaked:
+
+```swift
+let object1 = LeakableObject()
+let object2 = LeakableObject(otherObject: object1)
+object1.otherObject = object2
+```
+
+Using LeakDetector can detect the leak in Runtime:
+
+```swift
+import LeakDetector
+
+// When we expecting the deallocation of 2 instances of LeakableObject, such as view controller keep these instances is dismissed
+LeakDetector.instance.expectDeallocate(object: object1)
+LeakDetector.instance.expectDeallocate(object: object2)
+```
+
+An assert failure will be throw and App will be crash to let developers be aware & fix the leak. By default, LeakDetector is disable, we should enable on Debug mode only:
+
+```swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+  #if Debug
+      LeakDetector.isEnabled = true
+  #endif
+  return true
+}
+```
+
+You can open the Demo project to explore more use cases of using LeakDetector
+
+![](screenshot.png)
+
 ## Contributing
 
 Issues and pull requests are welcome!
 
 ## Author
 
-Steve Dao [@duyquang_91](https://twitter.com/duyquang_91)
+[@SteveDao](https://www.linkedin.com/in/steve-dao-259563147/)
 
 ## License
 

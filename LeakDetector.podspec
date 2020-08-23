@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage = 'https://www.linkedin.com/in/steve-dao-259563147/'
   s.social_media_url = 'https://twitter.com/duyquang_91'
   s.authors = { "Steve Dao" => "daoduyquang91@gmail.com" }
-  s.source = { :git => "https://github.com/duyquang91/LeakDetector.git", :tag  => "v"+s.version.to_s }
+  s.source = { :git => "https://github.com/duyquang91/LeakDetector.git", :tag  => s.version.to_s }
   s.platforms = { :ios => "9.0" }
   s.requires_arc = true
   s.swift_version = '5.0'

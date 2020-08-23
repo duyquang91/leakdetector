@@ -33,6 +33,9 @@
 		35B742371F82A61E00829B21 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742351F82A61E00829B21 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		35B742381F82A62900829B21 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742341F82A61D00829B21 /* Nimble.framework */; };
 		35B742391F82A62900829B21 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B742351F82A61E00829B21 /* Quick.framework */; };
+		DC05A41F24F265F2006C5B99 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC05A41C24F265F2006C5B99 /* RxCocoa.framework */; };
+		DC05A42024F265F2006C5B99 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC05A41D24F265F2006C5B99 /* RxRelay.framework */; };
+		DC05A42124F265F2006C5B99 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC05A41E24F265F2006C5B99 /* RxSwift.framework */; };
 		DC09EEB924F23A8D00447CBC /* LeakExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09EEB824F23A8D00447CBC /* LeakExecutor.swift */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +124,9 @@
 		35B7422E1F82A5E000829B21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		35B742341F82A61D00829B21 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		35B742351F82A61E00829B21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
+		DC05A41C24F265F2006C5B99 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		DC05A41D24F265F2006C5B99 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		DC05A41E24F265F2006C5B99 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		DC09EEB824F23A8D00447CBC /* LeakExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeakExecutor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +135,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC05A42024F265F2006C5B99 /* RxRelay.framework in Frameworks */,
+				DC05A41F24F265F2006C5B99 /* RxCocoa.framework in Frameworks */,
+				DC05A42124F265F2006C5B99 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +260,9 @@
 		357D954B1DA3F2B400AEC55F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC05A41C24F265F2006C5B99 /* RxCocoa.framework */,
+				DC05A41D24F265F2006C5B99 /* RxRelay.framework */,
+				DC05A41E24F265F2006C5B99 /* RxSwift.framework */,
 				35B742341F82A61D00829B21 /* Nimble.framework */,
 				35B742351F82A61E00829B21 /* Quick.framework */,
 				35B7422D1F82A5DF00829B21 /* Nimble.framework */,
@@ -768,7 +780,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -789,7 +804,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

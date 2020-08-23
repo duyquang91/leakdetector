@@ -7,9 +7,6 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/LeakDetector.svg)](https://cocoapods.org/pods/LeakDetector)
 
-[![Travis](https://img.shields.io/travis/duyquang91/LeakDetector/master.svg)](https://travis-ci.org/duyquang91/LeakDetector/branches)
-[![SwiftFrameworkTemplate](https://img.shields.io/badge/SwiftFramework-Template-red.svg)](http://github.com/RahulKatariya/SwiftFrameworkTemplate)
-
 Memory Leak Dedetection in runtime for iOS
 
 - [Requirements](#requirements)

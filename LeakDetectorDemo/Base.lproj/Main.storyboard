@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uRT-QQ-wix">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Leak Detector Demo-->
+        <scene sceneID="SVp-f5-nyu">
+            <objects>
+                <tableViewController id="nGX-bS-P0Y" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IW3-Ij-caf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Native" id="Tek-Gu-bcf">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Dhi-xB-xhw" style="IBUITableViewCellStyleDefault" id="Ej1-vk-ae6">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ej1-vk-ae6" id="vfi-6K-drw">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Leak by delegate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dhi-xB-xhw">
+                                                    <rect key="frame" x="20" y="0.0" width="355" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="RDn-O6-AYt" kind="show" id="8p6-nQ-2SM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="RxSwift" id="dgP-Xe-Lxo">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Qlm-JU-p0n" style="IBUITableViewCellStyleDefault" id="sMX-eo-bAa">
+                                        <rect key="frame" x="0.0" y="127.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sMX-eo-bAa" id="8mv-dH-gYt">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Leak by observables" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qlm-JU-p0n">
+                                                    <rect key="frame" x="20" y="0.0" width="355" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="mJA-Yn-6Uf" kind="show" id="QRg-AB-D79"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="nGX-bS-P0Y" id="Q6t-HK-utG"/>
+                            <outlet property="delegate" destination="nGX-bS-P0Y" id="Bxe-9N-go3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Leak Detector Demo" id="YZs-Kg-CsQ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cu0-dG-Gzl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1595.6521739130435" y="65.625"/>
+        </scene>
+        <!--Delegate-->
+        <scene sceneID="Eel-5E-5Wr">
+            <objects>
+                <viewController id="RDn-O6-AYt" customClass="DelegateViewController" customModule="LeakDetectorDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BN5-4x-GNN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Di-M8-pS0">
+                                <rect key="frame" x="16" y="417.5" width="382" height="61"/>
+                                <string key="text">This view controller retain a strong reference to its certain delegate which cause a retain cycle. Dismiss this view controller to see the result</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9Di-M8-pS0" firstAttribute="leading" secondItem="BLy-hi-3JA" secondAttribute="leading" constant="16" id="Vpt-kh-Z9R"/>
+                            <constraint firstItem="9Di-M8-pS0" firstAttribute="centerY" secondItem="BN5-4x-GNN" secondAttribute="centerY" id="akj-3a-bir"/>
+                            <constraint firstItem="BLy-hi-3JA" firstAttribute="trailing" secondItem="9Di-M8-pS0" secondAttribute="trailing" constant="16" id="vqE-lz-Tav"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BLy-hi-3JA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Delegate" id="C6k-iM-dDa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Oy-38-X40" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2355" y="66"/>
+        </scene>
+        <!--Observables-->
+        <scene sceneID="unt-JX-6fh">
+            <objects>
+                <viewController id="mJA-Yn-6Uf" customClass="RXViewController" customModule="LeakDetectorDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SP2-Kv-bSR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJx-Ov-057">
+                                <rect key="frame" x="16" y="417.5" width="382" height="61"/>
+                                <string key="text">This view controller subscribe to an observable which should be disposed a long with dismissal. Dismiss this view controller to see the result</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vJx-Ov-057" firstAttribute="centerY" secondItem="SP2-Kv-bSR" secondAttribute="centerY" id="6WC-pe-DBK"/>
+                            <constraint firstItem="vJx-Ov-057" firstAttribute="leading" secondItem="zYe-R1-QyQ" secondAttribute="leading" constant="16" id="9W7-55-AQN"/>
+                            <constraint firstItem="zYe-R1-QyQ" firstAttribute="trailing" secondItem="vJx-Ov-057" secondAttribute="trailing" constant="16" id="TUQ-Ve-Uzr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zYe-R1-QyQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Observables" id="TOm-ou-CS7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xzd-vq-ta9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3093" y="66"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eZc-S1-Jmb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uRT-QQ-wix" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="UVp-sw-d7F">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nGX-bS-P0Y" kind="relationship" relationship="rootViewController" id="mqG-1i-Qyz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KEq-PF-j6V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870" y="66"/>
+        </scene>
+    </scenes>
+</document>

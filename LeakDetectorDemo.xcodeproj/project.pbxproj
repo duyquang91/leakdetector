@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		858626398E24C4EDDD70B2E2 /* Pods_LeakDetectorDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A34F41CC6C70B43A970BA43F /* Pods_LeakDetectorDemo.framework */; };
+		DC05A41924F24FA0006C5B99 /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC05A41824F24FA0006C5B99 /* DelegateViewController.swift */; };
+		DC05A41B24F255C5006C5B99 /* RXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC05A41A24F255C5006C5B99 /* RXViewController.swift */; };
+		DC09EEC724F24B9D00447CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09EEC624F24B9D00447CBC /* AppDelegate.swift */; };
+		DC09EEC924F24B9D00447CBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09EEC824F24B9D00447CBC /* SceneDelegate.swift */; };
+		DC09EECB24F24B9D00447CBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC09EECA24F24B9D00447CBC /* ViewController.swift */; };
+		DC09EECE24F24B9D00447CBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC09EECC24F24B9D00447CBC /* Main.storyboard */; };
+		DC09EED024F24B9F00447CBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC09EECF24F24B9F00447CBC /* Assets.xcassets */; };
+		DC09EED324F24B9F00447CBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC09EED124F24B9F00447CBC /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A34F41CC6C70B43A970BA43F /* Pods_LeakDetectorDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeakDetectorDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F3B734D26E57691365D109 /* Pods-LeakDetectorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeakDetectorDemo.debug.xcconfig"; path = "Target Support Files/Pods-LeakDetectorDemo/Pods-LeakDetectorDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		DC05A41824F24FA0006C5B99 /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
+		DC05A41A24F255C5006C5B99 /* RXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXViewController.swift; sourceTree = "<group>"; };
+		DC09EEC324F24B9D00447CBC /* LeakDetectorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeakDetectorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC09EEC624F24B9D00447CBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC09EEC824F24B9D00447CBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DC09EECA24F24B9D00447CBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC09EECD24F24B9D00447CBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC09EECF24F24B9F00447CBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC09EED224F24B9F00447CBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC09EED424F24B9F00447CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED99EF59C133D44E7E8E5CCB /* Pods-LeakDetectorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeakDetectorDemo.release.xcconfig"; path = "Target Support Files/Pods-LeakDetectorDemo/Pods-LeakDetectorDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC09EEC024F24B9D00447CBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				858626398E24C4EDDD70B2E2 /* Pods_LeakDetectorDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		038C94CEB518612D2224EB66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A34F41CC6C70B43A970BA43F /* Pods_LeakDetectorDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		495422B6E78F0C93DCA0EAC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3F3B734D26E57691365D109 /* Pods-LeakDetectorDemo.debug.xcconfig */,
+				ED99EF59C133D44E7E8E5CCB /* Pods-LeakDetectorDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DC09EEBA24F24B9D00447CBC = {
+			isa = PBXGroup;
+			children = (
+				DC09EEC524F24B9D00447CBC /* LeakDetectorDemo */,
+				DC09EEC424F24B9D00447CBC /* Products */,
+				495422B6E78F0C93DCA0EAC4 /* Pods */,
+				038C94CEB518612D2224EB66 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC09EEC424F24B9D00447CBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC09EEC324F24B9D00447CBC /* LeakDetectorDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC09EEC524F24B9D00447CBC /* LeakDetectorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DC09EEC624F24B9D00447CBC /* AppDelegate.swift */,
+				DC09EEC824F24B9D00447CBC /* SceneDelegate.swift */,
+				DC09EECA24F24B9D00447CBC /* ViewController.swift */,
+				DC09EECC24F24B9D00447CBC /* Main.storyboard */,
+				DC09EECF24F24B9F00447CBC /* Assets.xcassets */,
+				DC09EED124F24B9F00447CBC /* LaunchScreen.storyboard */,
+				DC09EED424F24B9F00447CBC /* Info.plist */,
+				DC05A41824F24FA0006C5B99 /* DelegateViewController.swift */,
+				DC05A41A24F255C5006C5B99 /* RXViewController.swift */,
+			);
+			path = LeakDetectorDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC09EEC224F24B9D00447CBC /* LeakDetectorDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC09EED724F24B9F00447CBC /* Build configuration list for PBXNativeTarget "LeakDetectorDemo" */;
+			buildPhases = (
+				55E496189D3A43E71C17DA6E /* [CP] Check Pods Manifest.lock */,
+				DC09EEBF24F24B9D00447CBC /* Sources */,
+				DC09EEC024F24B9D00447CBC /* Frameworks */,
+				DC09EEC124F24B9D00447CBC /* Resources */,
+				2972F3645A8157DAE887E5E0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeakDetectorDemo;
+			productName = LeakDetectorDemo;
+			productReference = DC09EEC324F24B9D00447CBC /* LeakDetectorDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC09EEBB24F24B9D00447CBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Steve Dao";
+				TargetAttributes = {
+					DC09EEC224F24B9D00447CBC = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = DC09EEBE24F24B9D00447CBC /* Build configuration list for PBXProject "LeakDetectorDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC09EEBA24F24B9D00447CBC;
+			productRefGroup = DC09EEC424F24B9D00447CBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC09EEC224F24B9D00447CBC /* LeakDetectorDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC09EEC124F24B9D00447CBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC09EED324F24B9F00447CBC /* LaunchScreen.storyboard in Resources */,
+				DC09EED024F24B9F00447CBC /* Assets.xcassets in Resources */,
+				DC09EECE24F24B9D00447CBC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2972F3645A8157DAE887E5E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LeakDetectorDemo/Pods-LeakDetectorDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LeakDetectorDemo/Pods-LeakDetectorDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LeakDetectorDemo/Pods-LeakDetectorDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55E496189D3A43E71C17DA6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LeakDetectorDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC09EEBF24F24B9D00447CBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC05A41B24F255C5006C5B99 /* RXViewController.swift in Sources */,
+				DC09EECB24F24B9D00447CBC /* ViewController.swift in Sources */,
+				DC05A41924F24FA0006C5B99 /* DelegateViewController.swift in Sources */,
+				DC09EEC724F24B9D00447CBC /* AppDelegate.swift in Sources */,
+				DC09EEC924F24B9D00447CBC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC09EECC24F24B9D00447CBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC09EECD24F24B9D00447CBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC09EED124F24B9F00447CBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC09EED224F24B9F00447CBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC09EED524F24B9F00447CBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC09EED624F24B9F00447CBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC09EED824F24B9F00447CBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3F3B734D26E57691365D109 /* Pods-LeakDetectorDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8C98S3WY53;
+				INFOPLIST_FILE = LeakDetectorDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.duyquang91.LeakDetectorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC09EED924F24B9F00447CBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED99EF59C133D44E7E8E5CCB /* Pods-LeakDetectorDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8C98S3WY53;
+				INFOPLIST_FILE = LeakDetectorDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.duyquang91.LeakDetectorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC09EEBE24F24B9D00447CBC /* Build configuration list for PBXProject "LeakDetectorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC09EED524F24B9F00447CBC /* Debug */,
+				DC09EED624F24B9F00447CBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC09EED724F24B9F00447CBC /* Build configuration list for PBXNativeTarget "LeakDetectorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC09EED824F24B9F00447CBC /* Debug */,
+				DC09EED924F24B9F00447CBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC09EEBB24F24B9D00447CBC /* Project object */;
+}

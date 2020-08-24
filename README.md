@@ -7,7 +7,7 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![CocoaPods compatible](https://img.shields.io/cocoapods/v/LeakDetector.svg)](https://cocoapods.org/pods/LeakDetector)
 
-Memory Leak Dedetection in runtime for iOS
+Memory Leak Detection in runtime for iOS
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -183,6 +183,10 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions: [U
 You can open the Demo project to explore more use cases of using LeakDetector
 
 ![](screenshot.png)
+
+## Inspiration
+
+The idea & code implementation is referred from open-source [Uber RIBs](https://github.com/uber/RIBs) architecture.
 
 ## Contributing
 

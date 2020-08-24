@@ -186,7 +186,7 @@ You can open the Demo project to explore more use cases of using LeakDetector
 
 ## Inspiration
 
-The idea & code implementation is referred from open-source [Uber RIBs](https://github.com/uber/RIBs) architecture.
+We can talk about the idea via this [article on medium](https://medium.com/@duyquang91/memory-leak-detection-in-runtime-on-ios-cb4193f185fb) & the code implementation is referred from open-source [Uber RIBs](https://github.com/uber/RIBs) architecture.
 
 ## Contributing
 
